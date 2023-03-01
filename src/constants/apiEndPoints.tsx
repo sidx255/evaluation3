@@ -22,7 +22,7 @@ export const UPDATE_EVENT_BOOKMARK = (id: number) => ({
 
 export const GET_THEMES = {
   url: 'api/themes',
-  method: 'patch',
+  method: 'get',
 };
 
 export const SAVE_THEME = (id: number) => ({

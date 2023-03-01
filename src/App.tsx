@@ -8,23 +8,24 @@ import EventDetails from './pages/EventDetails';
 import { GET_THEMES, SAVE_THEME } from './constants/apiEndPoints';
 import makeRequest from './utils/makeRequest';
 
-// import { ThemeContext } from './contexts/themeContext';
+import { ThemeContext } from './contexts/themeContext';
 
 
 // import { BlogPostProvider } from './contexts/BlogPostContext';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-// const { theme, setTheme } = React.useContext(ThemeContext);
+
 
 function App() {
+  // const { theme, setTheme } = React.useContext(ThemeContext);
   // React.useEffect(() => {
   //   makeRequest(GET_THEMES).then((response) => {
-  //     // console.log(response);
-  //     //const [currTheme,setCurrTheme]=React.useState(theme['themes'][theme['preferredThemeId']].colorHexCode);
-  //     console.log(response['themes'][response['preferredThemeId']].colorHexCode);
-  //     //console.log({...response,"currTheme": response['themes'][response['preferredThemeId']].colorHexCode})
+  //     console.log(response);
+  //     // console.log(response['themes'][response['preferredThemeId']].colorHexCode);
   //     setTheme({...response,'currTheme': response['themes'][response['preferredThemeId']].colorHexCode});
+  //     setTheme({...response});
+
   //   }).catch((error) => {
   //     console.log(error);
   //   });

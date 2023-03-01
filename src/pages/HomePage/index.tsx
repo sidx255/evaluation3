@@ -7,11 +7,6 @@ import makeRequest from '../../utils/makeRequest';
 
 
 import { GET_ALL_EVENTS, 
-  GET_EVENT,
-  UPDATE_EVENT_REGISTRATION,
-  UPDATE_EVENT_BOOKMARK,
-  GET_THEMES,
-  SAVE_THEME
 } from '../../constants/apiEndPoints';
 
 import './HomePage.css';
@@ -25,7 +20,6 @@ const HomePage = () => {
   const [Events, setEvents] = React.useState<Array<[]>>([]);
   const [Themes, setThemes] = React.useState<Array<[]>>([]);
   const [isClicked, setIsClicked] = React.useState<boolean>(false);
-  const [getCard, setGetCard] = React.useState<any>([]);
 
   React.useEffect(() => {
     makeRequest(GET_ALL_EVENTS)

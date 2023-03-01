@@ -1,5 +1,7 @@
 .footer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #121212;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -7,5 +9,11 @@
     bottom: 0;
     /* width: 100%; */
     padding-left: 30px;
+}
+
+.themes {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
   

@@ -2,6 +2,10 @@
 import React from 'react';
 import makeRequest from '../../utils/makeRequest';
 
+
+// embed logo font
+
+
 import { GET_ALL_EVENTS, 
   GET_EVENT,
   UPDATE_EVENT_REGISTRATION,

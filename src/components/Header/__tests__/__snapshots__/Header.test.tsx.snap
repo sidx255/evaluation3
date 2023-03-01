@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Header 1`] = `
+<DocumentFragment>
+  <div
+    class="header"
+    data-testid="header"
+  >
+    <p
+      class="header-text"
+    >
+      EVENTIFY
+    </p>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app 1`] = `
+<DocumentFragment>
+  <div
+    class="body-padding footer"
+  >
+    <div
+      class="footer-text"
+    >
+      THEMES
+    </div>
+    <div
+      class="themes"
+    >
+      <div
+        class="theme-color"
+        style="background-color: rgb(0, 0, 0);"
+      >
+        blue
+      </div>
+      <div
+        class="theme-color"
+        style="background-color: rgb(31, 31, 31);"
+      >
+        green
+      </div>
+      <div
+        class="theme-color"
+        style="background-color: rgb(47, 47, 47);"
+      >
+        red
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

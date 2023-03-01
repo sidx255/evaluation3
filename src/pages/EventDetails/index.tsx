@@ -36,11 +36,13 @@ const EventDetails = () => {
 
 
   return (
-    <div onClick={routeChange}>
-      {/* {Event.map((event: any, idx: number) => ( */}
-      {/* // <Card setIsClicked={setIsClicked} key={idx} {...event} /> */}
-      <Card {...Event} />
-      {/* ))} */}
+    <div className='body'>
+      <div className='card' onClick={routeChange}>
+        {/* {Event.map((event: any, idx: number) => ( */}
+        {/* // <Card setIsClicked={setIsClicked} key={idx} {...event} /> */}
+        <Card {...Event} />
+        {/* ))} */}
+      </div>
     </div>
   );};
 

@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app 1`] = `
+<DocumentFragment>
+  <link
+    href="https://fonts.googleapis.com"
+    rel="preconnect"
+  />
+  <link
+    href="https://fonts.gstatic.com"
+    rel="preconnect"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100;700&display=swap"
+    rel="stylesheet"
+  />
+  <div
+    class="App"
+  >
+    <header>
+      <div
+        class="header"
+        data-testid="header"
+      >
+        <p
+          class="header-text"
+        >
+          EVENTIFY
+        </p>
+      </div>
+    </header>
+    <div
+      class="body"
+    >
+      <div
+        class="util-bar"
+      >
+        <div
+          class="bar-left"
+        >
+          <div
+            class="filter-button"
+          >
+            <p>
+              FILTER
+            </p>
+          </div>
+          <div
+            class="button-registered-events"
+          >
+            <p>
+              REGISTERED
+            </p>
+          </div>
+          <div
+            class="button-show-all-events"
+          >
+            <p>
+              ALL
+            </p>
+          </div>
+        </div>
+        <div
+          class="bar-right"
+        >
+          <div
+            class="search-bar"
+          >
+            <input
+              placeholder="Event Name"
+              type="text"
+            />
+          </div>
+          <div
+            class="button-show-bookmarked"
+          >
+            <p>
+              BOOKMARKED
+            </p>
+          </div>
+          <div
+            class="button-show-available-seats"
+          >
+            <p>
+              SEATS AVAILABLE
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cards"
+      />
+      <br />
+    </div>
+    <footer>
+      <div
+        class="body-padding footer"
+      >
+        <div
+          class="footer-text"
+        >
+          THEMES
+        </div>
+        <div
+          class="themes"
+        >
+          <div
+            class="theme-color"
+            style="background-color: rgb(0, 0, 0);"
+          >
+            blue
+          </div>
+          <div
+            class="theme-color"
+            style="background-color: rgb(31, 31, 31);"
+          >
+            green
+          </div>
+          <div
+            class="theme-color"
+            style="background-color: rgb(47, 47, 47);"
+          >
+            red
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</DocumentFragment>
+`;

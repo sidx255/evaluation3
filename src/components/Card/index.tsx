@@ -102,18 +102,18 @@ const Card = ({
           <img src={imgUrl} alt='cover' width={180} height={180}/>
         </div>
         <div className='event-name'>
-          <h5>{name}</h5>
+          <p>{name}</p>
         </div>
-        <h6 className='description'>{description}</h6>
-        <h6 className='venue'>{venue}</h6>
-        <h6 className='date'>{getFormattedDateFromUtcDate(datetime)}</h6>
+        <p className='description'>{description}</p>
+        <p className='venue'>VENUE: {venue}</p>
+        <p className='date'>DATE: {getFormattedDateFromUtcDate(datetime)}</p>
         <div className='registered'>
           {
-            Registered?
+            !Registered?
               <p>REGISTERED</p>
               :
-              Seats?
-                <p>No Seats AVAILABLE</p>
+              !Seats?
+                <p>No Seats Available</p>
                 :<p> </p>
           }
         </div>
@@ -121,8 +121,8 @@ const Card = ({
         <div className='bookmark' onClick={handleBookmark}> 
           {
             Bookmarked?
-              <img src='/assets/bookmark-dark.png' alt='bookmark-yes' width={20} height={20} style={{marginRight: '5px'}}/>
-              :<img src='/assets/bookmark-light.png' alt='bookmark-no' width={20} height={20} style={{marginRight: '5px'}}/>
+              <img src='/assets/b-solid.png' alt='bookmark-yes' width={40} height={40} style={{marginRight: '5px'}}/>
+              :<img src='/assets/b-light.png' alt='bookmark-no' width={40} height={40} style={{marginRight: '5px'}}/>
           }
                     
         </div>

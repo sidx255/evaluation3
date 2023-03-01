@@ -1,6 +1,7 @@
 import React from 'react';
 import makeRequest from '../../utils/makeRequest';
 import FontAwesome from 'react-fontawesome';
+import { getFormattedDateFromUtcDate } from '../../utils/utcDateTime';
 
 import { GET_ALL_EVENTS, 
   GET_EVENT,
@@ -11,6 +12,8 @@ import { GET_ALL_EVENTS,
 } from '../../constants/apiEndPoints';
 
 import './Card.css';
+import { useNavigate } from 'react-router-dom';
+
 
 // import EventDetails from '../../pages/EventDetails';
 
@@ -25,8 +28,7 @@ const Card = ({
   areSeatsAvailable,
   isRegistered,
   isBookmarked,
-  imgUrl,
-  setIsClicked
+  imgUrl
 }
     : { 
         id: number,
@@ -38,10 +40,15 @@ const Card = ({
         areSeatsAvailable: boolean,
         isRegistered: boolean,
         isBookmarked: boolean,
-        imgUrl: string,
-        setIsClicked: any
+        imgUrl: string
     }
 ) => {
+
+  const navigate = useNavigate(); 
+  const routeChange = (id:any) =>{ 
+    const path = `event-details?q=${id}`; 
+    navigate(path);
+  };
 
   const [Bookmarked, setBookmarked] = React.useState<boolean>();
   const [Registered, setRegistered] = React.useState<boolean>();
@@ -87,8 +94,10 @@ const Card = ({
 
   return (
     <div className='card' data-testid='card'>
-      <div className='card-body' onClick={() => { setIsClicked(true);}}>
-        <div className='cover'>
+      <div className='card-body' >
+        <div className='cover' onClick={() => { 
+        // setIsClicked(true); 
+          routeChange(id);}}>
           {/* image tag */}
           <img src={imgUrl} alt='cover' width={180} height={180}/>
         </div>
@@ -97,7 +106,7 @@ const Card = ({
         </div>
         <h6 className='description'>{description}</h6>
         <h6 className='venue'>{venue}</h6>
-        <h6 className='date'>{datetime}</h6>
+        <h6 className='date'>{getFormattedDateFromUtcDate(datetime)}</h6>
         <div className='registered'>
           {
             Registered?

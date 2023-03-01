@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import HomePage from './pages/HomePage';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import Header from './components/Header';
 
 // import { BlogPostProvider } from './contexts/BlogPostContext';
@@ -14,10 +14,9 @@ function App() {
         <Header />
       </header>
       <HomePage />
-      
-      {/* <footer>
+      <footer>
         <Footer />
-      </footer>  */}
+      </footer> 
     </div>
   );
 }

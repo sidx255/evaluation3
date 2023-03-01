@@ -1,0 +1,32 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  background-color: #DFDFDF;
+  border-radius: 25px;
+  width: 300px;
+  height: 600px;
+  box-shadow: 10px 5px 5px rgb(145, 145, 145);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.description {
+  display: flex;
+  overflow-y: hidden;
+}
+
+
+
+  

@@ -1,0 +1,16 @@
+
+.header {
+    display: flex;
+    font-size: 2.0em;
+    text-align: left;
+    align-items: center;
+    height: 2em;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+.header-text {
+    display: flex;
+    padding-left: 5em;
+
+}
